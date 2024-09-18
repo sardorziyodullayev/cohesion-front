@@ -10,7 +10,7 @@ import { getTotal } from "@/shared/lib/helpers";
  *
  * @returns {JSX.Element} A table representing employees with pagination and loading overlay.
  */
-export const EmployeeTableTab = ({ data, activePage, setPage }) => {
+export const EmployeeTableTab = ({ data, activePage, setPage }: any) => {
   const navigate = useNavigate();
 
   const handleCardClick = (employee: Employee) => {
