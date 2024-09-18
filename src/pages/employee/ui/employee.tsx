@@ -72,7 +72,7 @@ export const Employee = () => {
           <Select
             clearable
             placeholder="Filter by department"
-            data={departmentData?.map(item => ({
+            data={departmentData?.map((item: any) => ({
               value: `${item.id}`,
               label: item.name,
             }))}

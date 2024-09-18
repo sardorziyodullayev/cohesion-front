@@ -19,8 +19,8 @@ import {
 } from "@mantine/core";
 import { useEffect, useRef, useState } from "react";
 import { useForm, zodResolver } from "@mantine/form";
-import { z, ZodError } from "zod";
-import { Dropzone, FileWithPath, IMAGE_MIME_TYPE, MIME_TYPES } from "@mantine/dropzone";
+import { z } from "zod";
+import { Dropzone, FileWithPath, IMAGE_MIME_TYPE } from "@mantine/dropzone";
 import { IconCloudUpload, IconX, IconDownload, IconTrash } from "@tabler/icons-react";
 import { IMaskInput } from "react-imask";
 import ArrowLeftIcon from "shared/assets/icons/arrow-left.svg";
@@ -80,7 +80,7 @@ const passwordSchema = z
 export const SignUp = () => {
   const [file, setFile] = useState<FileWithPath | null>(null);
   const [active, setActive] = useState(0);
-  const [loading, setLoading] = useState(false);
+  const [loading] = useState(false);
   const phoneInputRef = useRef(null);
 
   const { upload } = useAttachActions();
@@ -170,6 +170,7 @@ export const SignUp = () => {
   const prevStep = () => setActive(current => (current > 0 ? current - 1 : current));
 
   const handleSubmit = (values: typeof form.values) => {
+    console.log(values);
     nextStep();
   };
 

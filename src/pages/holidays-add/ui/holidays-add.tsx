@@ -5,7 +5,7 @@ import { useForm, zodResolver } from "@mantine/form";
 import classes from "./Holidays-add.module.css";
 import { CustomBreadcrumbs } from "@/shared/ui";
 import { getSession, notify } from "@/shared/lib/helpers";
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { calculateDaysBetween } from "@/features/holidays";
 import { useHolidaysActions } from "@/entities/holidays/model/holidays.actions.queries.ts";
 

@@ -1,9 +1,7 @@
+import { DepartmentIds } from "./all-news";
+
 export type GetNewByIdParams = {
   id: string | undefined;
-};
-
-export type DepartmentIds = {
-  id: number;
 };
 
 export type NewByIdResponse = {
@@ -13,5 +11,5 @@ export type NewByIdResponse = {
   title: string;
   content: string;
   type: "ALL" | "BY_DEPARTMENT";
-  departmentIds: DepartmentIds[];
+  departmentIds: DepartmentIds[];  // Takroriy eksport o'rniga oldingi import
 };

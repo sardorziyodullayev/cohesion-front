@@ -12,14 +12,14 @@ export const NewsDetail = () => {
 
   return (
     <div>
-      <CustomBreadcrumbs title={data?.data?.title} breadcrumbsList={breadcrumbsList} />
+      <CustomBreadcrumbs title={data?.title} breadcrumbsList={breadcrumbsList} />
       <Stack className={classes.detailBox} pos="relative">
         {isLoading && <TLoaderOverlay />}
         <Text fw={600} fz="32px" lh="38px">
-          {data?.data?.title}
+          {data?.title}
         </Text>
         <Text fz="16px" lh="27px" color="dimmed">
-          {data?.data?.content}
+          {data?.content}
         </Text>
       </Stack>
     </div>

@@ -1,5 +1,6 @@
 import { useMutation } from "@tanstack/react-query";
 import { userApi } from "@/shared/api/user.ts";
+import { GetAllUsersParams } from "@/shared/lib/types";
 
 /**
  * A custom hook that provides a set of user-related actions utilizing mutations.
@@ -14,15 +15,15 @@ import { userApi } from "@/shared/api/user.ts";
  */
 export const useUserActions = () => {
   const updateUser = useMutation({
-    mutationFn: () => userApi.getAllUser(),
+    mutationFn: (params: GetAllUsersParams) => userApi.getAllUser(params),
   });
 
   const updateUserInfo = useMutation({
-    mutationFn: () => userApi.getAllUser(),
+    mutationFn: (params: GetAllUsersParams) => userApi.getAllUser(params),
   });
 
   const updateUserPassword = useMutation({
-    mutationFn: () => userApi.getAllUser(),
+    mutationFn: (params: GetAllUsersParams) => userApi.getAllUser(params),
   });
 
   const addUser = useMutation({
@@ -30,7 +31,7 @@ export const useUserActions = () => {
   });
 
   const deleteUser = useMutation({
-    mutationFn: () => userApi.getAllUser(),
+    mutationFn: (params: GetAllUsersParams) => userApi.getAllUser(params),
   });
 
   return {

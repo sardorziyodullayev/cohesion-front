@@ -6,10 +6,9 @@ import TasksIcon from "shared/assets/icons/tasksIconHome.svg";
 import { HomeTask } from "@/pages/home/ui/home-task.tsx";
 import { homeData } from "@/shared/constants/home-data.ts";
 import { Calendar } from "@mantine/dates";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import dayjs from "dayjs";
 import classes from "./Home.module.css";
-import axios from "axios";
 
 const employeeData = [
   {
@@ -25,11 +24,6 @@ const employeeData = [
     to: "/employee-vacation",
   },
 ];
-
-const fetchMeetings = async () => {
-  const response = await axios.get('http://172.105.69.15:8080/api/v1/meeting/home');
-  return response.data;
-};
 
 export const Home = () => {
   const [selected, setSelected] = useState<Date[]>([]);

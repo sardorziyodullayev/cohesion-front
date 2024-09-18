@@ -9,7 +9,7 @@ class AuthApi {
     });
   }
 
-  async signup(params) {
+  async signup(params: any) {
     return await api.post<null, AuthResponse>("auth/sign-up", params);
   }
 }

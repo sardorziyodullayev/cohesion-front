@@ -1,2 +1,2 @@
 export * from "./all-news";
-export * from "./new-by-id.ts";
+export * from "./new-by-id";

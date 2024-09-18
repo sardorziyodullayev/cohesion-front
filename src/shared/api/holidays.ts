@@ -10,7 +10,7 @@ class HolidaysApi {
     return data;
   }
 
-  async createHoliday(param) {
+  async createHoliday(param: any) {
     const { data } = await api.post("time-off/create", param);
 
     return data;

@@ -36,7 +36,7 @@ export const EmployeeAdd = () => {
 
   const breadcrumbsList = [{ title: "Employee", href: "/employee" }];
 
-  const handleSubmit = async values => {
+  const handleSubmit = async (values: any) => {
     try {
       await addUser.mutateAsync(values).then(() => {
         notify("User successfully added", "lime");
@@ -96,14 +96,14 @@ export const EmployeeAdd = () => {
                     withAsterisk
                     label="Department"
                     placeholder="Select a department"
-                    data={departments?.map(item => ({ value: `${item.id}`, label: item.name }))}
+                    data={departments?.map((item: any) => ({ value: `${item.id}`, label: item.name }))}
                     {...form.getInputProps("departmentId")}
                   />
                   <Select
                     withAsterisk
                     label="Position"
                     placeholder="Position"
-                    data={positions?.map(item => ({ value: `${item.id}`, label: item.name }))}
+                    data={positions?.map((item: any) => ({ value: `${item.id}`, label: item.name }))}
                     {...form.getInputProps("positionId")}
                   />
                 </SimpleGrid>

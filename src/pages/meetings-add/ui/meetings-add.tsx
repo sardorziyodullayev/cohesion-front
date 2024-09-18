@@ -162,7 +162,7 @@ export const MeetingsAdd = () => {
                     withAsterisk
                     label="Invite members to the meeting"
                     placeholder="Select an employee or enter a name"
-                    data={data?.content.map(item => ({
+                    data={data?.content.map((item: any) => ({
                       value: `${item.id}`,
                       label: item.name,
                     }))}

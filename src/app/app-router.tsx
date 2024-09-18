@@ -21,7 +21,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { TSession } from "@/shared/lib/types";
 import { logout } from "@/entities/auth/model";
 import { Tasks } from "@/pages/tasks";
-import { IsAvailableInviteLink } from "@/pages/is-available-invite-link";
 
 type AuthGuardProps = {
   children: ReactElement;

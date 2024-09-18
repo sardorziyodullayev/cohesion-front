@@ -1,7 +1,7 @@
 import { api } from "./base";
 
 class AttachApi {
-  async upload(param) {
+  async upload(param: any) {
     const { data } = await api.post(`attach/upload/${param.name}`, param.formData, {
       headers: {
         "Content-Type": "applicatoin/x-www-form-urlencoded",

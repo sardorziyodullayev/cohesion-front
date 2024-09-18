@@ -1,4 +1,4 @@
-import { ActionIcon, Avatar, Button, CloseButton, Divider, Flex, Group, Menu, Text, TextInput, useMantineColorScheme } from "@mantine/core";
+import { ActionIcon, Avatar, CloseButton, Divider, Flex, Group, Menu, Text, TextInput, useMantineColorScheme } from "@mantine/core";
 import { IconBell, IconMoon, IconSearch, IconSun } from "@tabler/icons-react";
 import classes from "./Header.module.css";
 import { getLocalItem } from "@/shared/lib/helpers/storage.ts";

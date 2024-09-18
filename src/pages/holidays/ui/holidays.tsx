@@ -18,7 +18,7 @@ export const Holidays = () => {
     navigate("/holidays/holidays-add");
   };
 
-  const rows = holidaysData?.content.map(item => {
+  const rows = holidaysData?.content.map((item: any) => {
     const badgeColor = item.status === "PENDING" ? "orange" : item.status === "APPROVED" ? "blue" : "green";
     return (
       <Table.Tr key={item.id} className={classes.tableRow}>
