@@ -1,0 +1,28 @@
+.rowSelected {
+    background-color: var(--mantine-color-blue-light);
+}
+
+.holidaysBox {
+    margin: 32px 0 0 0;
+    padding: 20px;
+    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+    border-top-left-radius: var(--radius-xl, 12px);
+    border-top-right-radius: var(--radius-xl, 12px);
+}
+
+.tableRow {
+    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
+}
+
+.meetingsBody {
+    background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
+}
+
+.statusText {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: 1px solid var(--mantine-color-dark-7);
+    border-radius: 6px;
+}
+
+

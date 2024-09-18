@@ -1,0 +1,32 @@
+.loginContainer {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.leftSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.rightSide {
+  height: 100vh;
+
+  img {
+    object-position: left;
+    height: 100%;
+  }
+}
+
+.title {
+  text-align: left;
+  font-size: 44px;
+  line-height: 44px;
+  font-weight: 600;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-family:
+    Greycliff CF,
+    var(--mantine-font-family);
+}

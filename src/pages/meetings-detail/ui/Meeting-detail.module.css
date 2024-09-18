@@ -1,0 +1,14 @@
+.detailBox {
+  margin-bottom: 48px;
+  padding: 48px 40px;
+  background: white;
+  border-radius: var(--radius-xl, 16px);
+  border: 1px solid light-dark(var(--mantine-color-white), var(--mantine-color-dark-4));
+  background: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+}
+
+.link {
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-blue-5), var(--mantine-color-blue-5));
+  font-size: 16px;
+}

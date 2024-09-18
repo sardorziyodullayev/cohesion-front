@@ -1,0 +1,8 @@
+.detailBox {
+  padding: 42px 51px;
+  margin: 10px 165px;
+  background: white;
+  border-radius: var(--radius-xl, 12px);
+  border: 1px solid light-dark(var(--mantine-color-white), var(--mantine-color-dark-4));
+  background: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+}

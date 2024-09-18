@@ -1,0 +1,36 @@
+.title {
+  color: var(--colors-text-text-primary-900, #101828);
+  line-height: 32px;
+}
+
+.tabsTab {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  outline: none;
+}
+
+.informationBox {
+  margin-bottom: 40px;
+  border-radius: var(--radius-xl, 12px);
+  background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+  box-shadow:
+    0px 1px 3px 0px rgba(16, 24, 40, 0.1),
+    0px 1px 2px 0px rgba(16, 24, 40, 0.06);
+}
+
+.informationBg {
+  height: 128px;
+  border-radius: var(--radius-xl, 12px) var(--radius-xl, 12px) 0px 0px;
+  background: var(--Gradient-Linear-Color-62, linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%));
+}
+
+.informationStack {
+  padding: 20px 56px 40px 56px;
+}
+
+.informationAvatar {
+  width: 120px;
+  height: 120px;
+  margin-top: -70px;
+}

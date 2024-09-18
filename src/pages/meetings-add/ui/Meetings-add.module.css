@@ -1,0 +1,8 @@
+.meetingsAddBox {
+  padding: 40px 56px;
+  margin-bottom: 50px;
+  background: white;
+  border-radius: var(--radius-xl, 12px);
+  border: 1px solid light-dark(var(--mantine-color-white), var(--mantine-color-dark-4));
+  background: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7));
+}

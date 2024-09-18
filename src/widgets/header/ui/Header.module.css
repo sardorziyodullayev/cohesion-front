@@ -1,0 +1,10 @@
+.header {
+  height: var(--header-height);
+  margin-top: 24px;
+  padding: 12px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-8));
+  border: 1px solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  border-radius: 12px;
+}
