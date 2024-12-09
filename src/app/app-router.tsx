@@ -16,10 +16,7 @@ import { SignIn } from "@/pages/sign-in";
 import { SignUp } from "@/pages/sign-up";
 import { Holidays } from "@/pages/holidays";
 import { HolidaysAdd } from "@/pages/holidays-add";
-import { ReactElement } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { TSession } from "@/shared/lib/types";
-import { logout } from "@/entities/auth/model";
 import { Tasks } from "@/pages/tasks";
 
 
