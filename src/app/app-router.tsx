@@ -16,7 +16,6 @@ import { SignIn } from "@/pages/sign-in";
 import { SignUp } from "@/pages/sign-up";
 import { Holidays } from "@/pages/holidays";
 import { HolidaysAdd } from "@/pages/holidays-add";
-import { useDispatch, useSelector } from "react-redux";
 import { Tasks } from "@/pages/tasks";
 
 
@@ -36,10 +35,6 @@ export const Router = () => {
           path: "/signup/activate/:inviteId",
           element: <SignUp />,
         },
-        // {
-        //   path: "/signup/activate/:inviteId",
-        //   element: <IsAvailableInviteLink />,
-        // },
       ],
     },
     {
