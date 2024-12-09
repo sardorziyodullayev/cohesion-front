@@ -47,9 +47,7 @@ export const Router = () => {
     },
     {
       element: (
-        { /* <AuthGuard> */ }
           <BaseLayout />
-        {/*</AuthGuard> */}
       ),
       children: [
         {
