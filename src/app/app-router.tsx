@@ -22,23 +22,6 @@ import { TSession } from "@/shared/lib/types";
 import { logout } from "@/entities/auth/model";
 import { Tasks } from "@/pages/tasks";
 
-{/* type AuthGuardProps = {
-  children: ReactElement;
-};
-
-function AuthGuard({ children }: AuthGuardProps) {
-  const dispatch = useDispatch();
-  const { auth } = useSelector((state: { auth: TSession }) => state);
-
-  const isAuthenticated = auth.isAuthenticated;
-
-  if (!isAuthenticated) {
-    dispatch(logout());
-    return <Navigate to="signin" />;
-  }
-
-  return children;
-} */}
 
 export const Router = () => {
   return createBrowserRouter([
