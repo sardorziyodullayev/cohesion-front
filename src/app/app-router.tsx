@@ -64,9 +64,9 @@ export const Router = () => {
     },
     {
       element: (
-        <AuthGuard>
+        // <AuthGuard>
           <BaseLayout />
-        </AuthGuard>
+        // </AuthGuard>
       ),
       children: [
         {
