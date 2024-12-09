@@ -22,7 +22,7 @@ import { TSession } from "@/shared/lib/types";
 import { logout } from "@/entities/auth/model";
 import { Tasks } from "@/pages/tasks";
 
-type AuthGuardProps = {
+{/* type AuthGuardProps = {
   children: ReactElement;
 };
 
@@ -38,7 +38,7 @@ function AuthGuard({ children }: AuthGuardProps) {
   }
 
   return children;
-}
+} */}
 
 export const Router = () => {
   return createBrowserRouter([
@@ -64,9 +64,9 @@ export const Router = () => {
     },
     {
       element: (
-        // <AuthGuard>
+        { /* <AuthGuard> */ }
           <BaseLayout />
-        // </AuthGuard>
+        {/*</AuthGuard> */}
       ),
       children: [
         {
